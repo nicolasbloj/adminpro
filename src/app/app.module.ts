@@ -13,6 +13,7 @@ import { BreadcumbsComponent } from './shared/breadcumbs/breadcumbs.component';
 
 // Routes
 import { APP_ROUTES } from './app.routes';
+import { PagesComponent } from './pages/pages.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { APP_ROUTES } from './app.routes';
     ProgressComponent,
     HeaderComponent,
     SidebarComponent,
-    BreadcumbsComponent
+    BreadcumbsComponent,
+    PagesComponent
   ],
   imports: [
     BrowserModule,
