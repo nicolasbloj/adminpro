@@ -8,11 +8,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Charts1Component } from './charts1/charts1.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { PAGES_ROUTES } from './pages.routes';
 
 @NgModule({
   imports: [
     SharedModule,
-    RouterModule
+    RouterModule,
+    PAGES_ROUTES
   ],
   declarations: [
     Charts1Component,
@@ -24,7 +26,6 @@ import { RouterModule } from '@angular/router';
     Charts1Component,
     DashboardComponent,
     ProgressComponent,
-    PagesComponent
-  ]
+    PagesComponent  ]
 })
 export class PagesModule { }

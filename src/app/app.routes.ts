@@ -11,18 +11,9 @@ import { PagesComponent } from './pages/pages.component';
 
 const appRoutes: Routes = [
 
-    {
-        path: '', component: PagesComponent,
-        children: [
-            { path: 'dashboard', component: DashboardComponent },
-            { path: 'progress', component: ProgressComponent },
-            { path: 'charts1', component: Charts1Component },
-            { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
-        ]
-    },
-
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
+    { path: '', component: PagesComponent },
 
     // The default value of 'pathMatch' is 'prefix', but often the intent is to use 'full'.
     { path: '**', component: NopagefoundComponent },
