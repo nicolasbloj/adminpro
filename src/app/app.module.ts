@@ -11,6 +11,9 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcumbsComponent } from './shared/breadcumbs/breadcumbs.component';
 
+// Routes
+import { APP_ROUTES } from './app.routes';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,8 @@ import { BreadcumbsComponent } from './shared/breadcumbs/breadcumbs.component';
     BreadcumbsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]
