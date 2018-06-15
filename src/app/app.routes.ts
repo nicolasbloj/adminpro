@@ -2,26 +2,20 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './login/register.component';
-import { ProgressComponent } from './pages/progress/progress.component';
-import { Charts1Component } from './pages/charts1/charts1.component';
-import { NopagefoundComponent } from './shared/404/nopagefound.component';
-import { PagesComponent } from './pages/pages.component';
+import { RegisterComponent } from './login/register.component'; 
 
+import { NopagefoundComponent } from './shared/404/nopagefound.component';
+ 
 
 const appRoutes: Routes = [
-
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
-    { path: '', component: PagesComponent },
-
+    // { path: '', component: PagesComponent },
     // The default value of 'pathMatch' is 'prefix', but often the intent is to use 'full'.
     { path: '**', component: NopagefoundComponent },
-
 ];
 
 export const APP_ROUTES = RouterModule.forRoot(appRoutes, { useHash: true });
-
 /*
 El useHash, hace que en nuestro router y navegación,
 use el caracter # en el URL... si pones FALSE, entonces no lo usa.... pero si no lo usas,
