@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.componen
     ProgressComponent,
     PagesComponent,
     IncrementadorComponent,
-    DoughnutChartComponent
+    DoughnutChartComponent,
+    AccountSettingsComponent
   ],
   exports: [
     Charts1Component,
