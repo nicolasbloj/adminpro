@@ -12,6 +12,8 @@ import { APP_ROUTES } from './app.routes';
 // Modules
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
+import { ServiceModule } from './services/service.module';
+
 
 
 
@@ -24,7 +26,8 @@ import { PagesModule } from './pages/pages.module';
   imports: [
     BrowserModule,
     PagesModule,
-    APP_ROUTES
+    APP_ROUTES,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
