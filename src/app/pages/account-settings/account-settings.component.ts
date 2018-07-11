@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-account-settings',
@@ -6,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountSettingsComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private _document) { }
 
   ngOnInit() {
+  }
+
+  cambiarColor(color: string): void {
+    console.log(color);
+    let url = "assets/css/colors/" + color + ".css";
+    this._document.getElementById('tema').setAttribute('href', url);
   }
 
 }
