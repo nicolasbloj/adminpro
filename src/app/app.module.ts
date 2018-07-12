@@ -13,6 +13,7 @@ import { APP_ROUTES } from './app.routes';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
 import { ServiceModule } from './services/service.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +28,8 @@ import { ServiceModule } from './services/service.module';
     BrowserModule,
     PagesModule,
     APP_ROUTES,
-    ServiceModule
+    ServiceModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
